@@ -102,4 +102,4 @@ class HiveMindProtocol:
 
     async def _handle_pong(self, sender_gid: int):
         """Handle incoming PONG: log acknowledgement."""
-        print(f"[HiveMind] Got PONG from {sender_gid} — peer is alive")
+        print(f"[HiveMind] Got PONG from {sender_gid}, peer is alive")

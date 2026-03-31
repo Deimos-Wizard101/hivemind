@@ -18,14 +18,15 @@ _REVERSE_MAP = {v: k for k, v in _TOKEN_MAP.items()}
 
 # Protocol prefix to distinguish HiveMind messages from normal chat.
 # Must use only characters the game's chat filter allows (alphanumeric
-# and spaces — no colons, symbols, or punctuation).
+# and spaces no colons, symbols, or punctuation). Otherwise you get 
+# emojis depending on the context. e.g -> HM P0 -> :P is emoji
 _PROTOCOL_PREFIX = "HM "
 
 
 class ChatEncoder:
     """Maps MessageType enums to/from wire-format chat strings.
 
-    MVP: produces simple prefixed tokens like "HM:P0" for PING.
+    MVP: produces simple prefixed tokens like "HM P0" for PING.
     Post-MVP: ChatStegCipher will sit between this and the wire,
     transforming tokens into natural chat sentences.
     """
