@@ -15,9 +15,9 @@ Bot-to-bot communication protocol over Wizard101's in-game directed chat. Two in
 git clone https://github.com/Deimos-Wizard101/wizwalker.git
 git clone https://github.com/Deimos-Wizard101/hivemind.git
 
-# Checkout the chat hooks branch (or use development after PR #25 merges)
+# Checkout the chat hooks PR #25 (or use development after it merges)
 cd wizwalker
-git fetch origin chat-and-buddy-hooks
+git fetch origin pull/25/head:chat-and-buddy-hooks
 git checkout chat-and-buddy-hooks
 
 # Install wizwalker in dev mode
