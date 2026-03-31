@@ -11,12 +11,6 @@ Controls:
 """
 
 import asyncio
-import sys
-import os
-
-# Add wizwalker to path
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "..", "WizwalkerLand", "wizwalker"))
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
 from wizwalker import ClientHandler
 from hivemind import HiveMindProtocol, MessageType
